@@ -12,14 +12,5 @@ export default defineConfig({
         https: true,
         host: '0.0.0.0',
     },
-    build: {
-        manifest: true,
-        outDir: 'public/build',
-        rollupOptions: {
-            output: {
-                manualChunks: undefined,
-            },
-        },
-    },
-    base: process.env.NODE_ENV === 'production' ? 'https://hackatonmisaelcarlosywalter-production.up.railway.app/' : '/',
+
 });
